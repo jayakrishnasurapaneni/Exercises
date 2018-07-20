@@ -1,0 +1,68 @@
+string=input("Enter a string: ").lower()
+letter=input("Enter the letter: ").lower()
+count=0
+for indx in string:
+    if indx==letter:
+        count+=1
+print(count)  
+
+strlist=list(input("Enter a string: ").lower())
+vowels = ['a','e','i','o','u']
+for element in strlist:
+    if element in vowels:
+        strlist.remove(element)
+print(''.join(strlist))
+    
+strlist=list(input("Enter a string: "))
+for i in range(0,len(string)):
+    if(i%2==1):
+        strlist[i]=strlist[i].upper()
+print(''.join(strlist))      
+
+num = int(input('Enter a number: '))
+ls=[]
+for element in range(num+1):
+          if element%2==0:
+              ls.append(element)
+print(ls)          
+
+num = int(input('Enter a number: '))
+div = int(input('Enter a divisor: '))
+ls=[]
+for element in range(num+1):
+          if element%div==0:
+              ls.append(element)
+print(ls)  
+
+ls1=[0,3,6,9,10,2,5]
+ls2=[2,6,4,7,8,1,15]
+flist=[]
+for element in ls1:
+    if element in ls2:
+        flist.append(element)
+flist.sort()  
+print(flist)	
+
+multiplier=int(input('Enter a multiplier: '))
+maxnum=int(input("Enter the maxnumber: "))
+ls=[]
+for i in range(maxnum):
+    if i%multiplier==0:
+        ls.append(i)
+print(ls)        
+    
+l1 = []
+for i in range(0, 7): 
+	number = int(input('Please enter a first number: '))
+	l1.append(number)
+l2 = []
+for i in range(0, 7):
+	number = int(input('Please enter a second number: '))
+	l2.append(number)
+
+common = []
+for element in l1:
+    if element in l2:
+        common.append(element)
+common.sort()
+print(common)	

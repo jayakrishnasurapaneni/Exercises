@@ -1,0 +1,56 @@
+x = int(input("Enter a number"))
+if x < 10:
+    print("This is a good number.")
+elif x>=10 and x<100:    
+    if x%2==0:
+        print("This is a best number.")
+    else:
+        print("This is a better number.")
+else:
+    print("Horrible number.")
+    
+    
+x = int(input("Enter a number"))
+if x %2 ==0:
+    if x%3==0:
+        print("even and divisible by 3")
+    else:
+        print("even")
+else:
+    if x%3==0:
+        print("odd and divisible by 3")
+    else:
+        print("odd")
+
+		
+total = 0
+for i in range(1,101):
+    total = total+i
+    if total > 100:
+        print(str(i)+" :The sum exceeded the max value of 100")
+        break
+
+        
+ls=[]
+for i in range(1,101):
+    if i%3==0 and i%5==0:
+        ls.append("FizzBuzz")
+    elif i%3==0:
+        ls.append("Fizz")
+    elif i %5==0:
+        ls.append("Buzz")
+    else:
+        ls.append(i)
+print(ls)        
+    		
+			
+if x > 10: 
+    pass
+if not x <= 10:
+    pass
+if x>=20 and x<= 30:
+    pass
+if x<0:
+    pass
+
+    
